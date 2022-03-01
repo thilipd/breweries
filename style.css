@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Desktop / laptop */
+
+body {
+
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main section */
+
+.container,
+.home_container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #005b9cb5;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.btn_container {
+    width: 100%;
+    min-height: 840px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    padding: 20px;
+    background-image: url('./images/beerbgDesk.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn_container button,
+.valueOfInput,
+.searching_btn,
+select,
+.data_submit {
+    width: 55vw;
+    height: 7vh;
+    margin: 10px;
+    font-size: 1.4rem;
+    border-radius: 20px;
+    border: none;
+    background: #ffffff7c;
+    color: #ffffff;
+    text-align: center;
+}
+
+select,
+.data_submit {
+    display: block;
+}
+
+select {
+    background: rgb(97, 97, 97);
+}
+
+.data_submit {
+    background: #6767677c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_container button:hover {
+    background: #ffffffcd;
+}
+
+/* Other secton/ common button */
+
+.back_btn {
+    background: none;
+    border: none;
+    position: absolute;
+    left: 10px;
+}
+
+.back_btn svg {
+    fill: rgb(255, 255, 255);
+    width: 30px;
+}
+
+button:hover,
+.searching_btn {
+    cursor: pointer;
+}
+
+/* List section */
+.breweries_list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.switch {
+    width: 100%;
+    min-height: 850px;
+    display: flex;
+    justify-content: center;
+}
+
+.switch,
+.breweries_list {
+    background-color: rgba(206, 165, 0, 0.5);
+}
+
+table {
+    width: 100%;
+    padding: 5px;
+}
+
+th,
+tr,
+td {
+    max-width: 200px;
+    min-height: 30px;
+    height: 60px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+tr {
+    padding: 5px 5px 0;
+    background: rgba(9, 9, 9, 0.612);
+}
+
+th,
+td {
+    padding: 13px;
+}
+
+.beerSVG {
+    background-image: url('./svg/beer.svg');
+}
+
+.locationSVG {
+    background-image: url('./svg/location.svg');
+}
+
+.zipSVG {
+    background-image: url('./svg/zip.svg');
+}
+
+.phoneSVG {
+    background-image: url('./svg/smartphone.svg');
+}
+
+.typeSVG {
+    background-image: url('./svg/network.svg');
+}
+
+.beerSVG,
+.locationSVG,
+.zipSVG,
+.phoneSVG,
+.typeSVG {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
+}
+
+.list {
+    max-width: 350px;
+    width: 48%;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #ffc0c0e4;
+    color: #ffffff;
+    background-blend-mode: multiply;
+}
+
+.tint {
+    max-width: 350px;
+    width: 100%;
+    height: 100%;
+    background: url('./images/beer3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+/* Search section */
+
+.breweries_search {
+    background: url('./images/beerbg1.jpeg');
+    width: 100%;
+    min-height: 840px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.search_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search_box input {
+    width: 70%;
+    height: 50px;
+    margin: 10px;
+    background: none;
+    border: none;
+    background: #ffffffa3;
+    color: #000;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.searching_btn {
+    background-color: #828282b5 !important;
+}
+
+::placeholder {
+    color: rgb(82, 82, 82);
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.searchList {
+    max-width: 350px;
+    min-height: 350px;
+    width: 48%;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.482);
+    color: aliceblue;
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_bottom {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
